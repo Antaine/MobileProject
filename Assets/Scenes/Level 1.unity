@@ -321,6 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45aab99f086a224e822b56bfeaa6d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpRate: 15
+  gravityRate: -20
   moveSpeed: 5
   laneSpacing: 4
 --- !u!143 &731797483
