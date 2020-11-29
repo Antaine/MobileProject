@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\__Scripts\TileManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
