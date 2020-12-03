@@ -18,7 +18,8 @@ Options menu implemented with no functionality
 
 Talked to game designer about the importance of the asthetics and leaving them to last as designing assets in blender slows done development(Through email).
 
-Added basic score.
-Talked with Designer about swapping the timer with a distance counter for better gameflow
+Added basic score.  
+Talked with Designer about swapping the timer with a distance counter for better gameflow.  
+Need to add Game over screen, improved collisions and more tiles.  
 
 
