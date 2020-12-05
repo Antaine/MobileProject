@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
+     <Compile Include="Assets\__Scripts\PauseMenu.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Score.cs" />
      <Compile Include="Assets\__Scripts\TileManager.cs" />
