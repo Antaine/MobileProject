@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3466632651182070633}
   - component: {fileID: 3476702757951055823}
   - component: {fileID: 3822857094841317923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Eraser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8437025687727736816}
   - component: {fileID: 2750255997712890633}
   - component: {fileID: 5564166934674569816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NotePad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5564166934422277538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

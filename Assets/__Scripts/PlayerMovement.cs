@@ -63,26 +63,3 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.y = jumpRate;
     }
 }
-
-
-      /*  if (controller.isGrounded)
-        {
-            
-           /* moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-            if(Input.GetAxis("Horizontal")>0)
-            {
-                moveDirection.x += moveRate;
-            }
-            else if(Input.GetAxis("Horizontal")<0)
-            {
-                 moveDirection.x -= moveRate;
-            }
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
-            if (Input.GetButton("Jump"))
-                moveDirection.y = jumpRate;
-
-        }
-        moveDirection.y -= gravity * Time.deltaTime;
-        moveDirection.z = moveSpeed;
-        controller.Move(moveDirection * Time.deltaTime);*/

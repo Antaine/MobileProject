@@ -56,11 +56,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\__Scripts\InkMovement.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Score.cs" />
      <Compile Include="Assets\__Scripts\TileManager.cs" />
+     <Compile Include="Assets\__Scripts\lnkMovement.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
