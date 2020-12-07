@@ -41,6 +41,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 Jump();
             }
+
+            if(Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                Crouch();
+            }
+
+            if(Input.GetKeyUp(KeyCode.LeftControl)){
+                UnCrouch();
+            }
         }
         else{ moveDirection.y += gravityRate*Time.deltaTime;}
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -61,5 +70,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(){
         moveDirection.y = jumpRate;
+    }
+
+    private void Crouch(){
+        Debug.Log("Crouch worked");
+        controller.height = 1.0f;
+    }
+
+    private void UnCrouch(){
+        Debug.Log("UnCrouch worked");
+        controller.height = 2.0f;
     }
 }

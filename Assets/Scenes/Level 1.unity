@@ -1103,7 +1103,7 @@ MonoBehaviour:
   - {fileID: 7225349896995675671, guid: 518d49b518a66404694472cdff7dc482, type: 3}
   - {fileID: 9064014757727704451, guid: 47125eb089808a146bf963568c3e677e, type: 3}
   zSpawn: 0
-  tileLength: 30
+  tileLength: 15
   numberOfTiles: 5
   playerTransform: {fileID: 731797481}
 --- !u!4 &783625287
@@ -1557,8 +1557,8 @@ GameObject:
   - component: {fileID: 1295361974}
   - component: {fileID: 1295361973}
   - component: {fileID: 1295361972}
-  - component: {fileID: 1295361971}
   - component: {fileID: 1295361976}
+  - component: {fileID: 1295361971}
   m_Layer: 8
   m_Name: InkWave
   m_TagString: Untagged
@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295361970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720f2dde71df070428580e3d1b83218e, type: 3}
+  m_Script: {fileID: 11500000, guid: 44e2fe8aaa6bd824781e9bf400bdc0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
