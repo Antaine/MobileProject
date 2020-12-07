@@ -17,7 +17,7 @@ public class InkMovement : MonoBehaviour
     private void FixedUpdate(){
         CharacterController controller = GetComponent<CharacterController>();
         controller.Move (Vector3.back * Time.deltaTime);
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        moveDirection = new Vector3(0, 0, 0);
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= moveSpeed;
         moveDirection.z = moveSpeed;

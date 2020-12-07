@@ -834,6 +834,7 @@ GameObject:
   - component: {fileID: 731797478}
   - component: {fileID: 731797482}
   - component: {fileID: 731797483}
+  - component: {fileID: 731797477}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -841,6 +842,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &731797477
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731797476}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!136 &731797478
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -849,7 +866,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731797476}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -1104,7 +1121,7 @@ MonoBehaviour:
   - {fileID: 9064014757727704451, guid: 47125eb089808a146bf963568c3e677e, type: 3}
   zSpawn: 0
   tileLength: 15
-  numberOfTiles: 5
+  numberOfTiles: 7
   playerTransform: {fileID: 731797481}
 --- !u!4 &783625287
 Transform:
