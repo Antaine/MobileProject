@@ -21,12 +21,14 @@ Talked to game designer about the importance of the asthetics and leaving them t
 Added basic score.  
 Talked with Designer about swapping the timer with a distance counter for better gameflow.  
 Need to add Game over screen, improved collisions and more tiles.  
+  
+Updated Menu with Ink Fonts.  
+Added Pause Menu.  
+Talked with designer about adding a quit to menu button.  
+Need to add ink to follow player.   Improve collisions that slow the player and death from ink.  
+Need to add more tiles andd extra levels.  
+Multiplayer add ghost, talk to designer about the scope of multiplayer being too big if other projects get in the way  
 
-Updated Menu with Ink Fonts.
-Added Pause Menu.
-Talked with designer about adding a quit to menu button.
-Need to add ink to follow player. Improve collisions that slow the player and death from ink.
-Need to add more tiles nad extra levels.
-Multiplayer add ghost, talk to designer about the scope of multiplayer being too big if other projects get in the way
-
+Added crouch,  
+improved movement  
 
