@@ -8,8 +8,12 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject gameMenuUI;
+    public GameObject gameOverUI;
 
     // Update is called once per frame
+    void Start(){
+        Time.timeScale = 1f;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -40,6 +44,13 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu(){
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Replay(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        gameMenuUI.SetActive(true);
+        gameOverUI.SetActive(false);
     }
 
     public void QuitGame(){

@@ -8,6 +8,8 @@ public class InkMovement : MonoBehaviour
     public float moveSpeed = 10.0f;
     private Vector3 moveDirection;
     [SerializeField] float loadDelay = 2.0f;
+    public GameObject gameMenuUI;
+    public GameObject gameOverMenuUI;
     
     void Start()
     {
@@ -26,9 +28,15 @@ public class InkMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
         print("Trigger from collision");
-        Invoke("ReloadScene",loadDelay);
+        DeathScreen();
+       // Invoke("ReloadScene",loadDelay);
     }
 
+    void DeathScreen(){
+        gameOverMenuUI.SetActive(true);
+        gameMenuUI.SetActive(false);
+        Time.timeScale = 0f;
+    }
     private void ReloadScene(){
         SceneManager.LoadScene(0);
     }
