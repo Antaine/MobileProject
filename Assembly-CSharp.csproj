@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\__Scripts\DeskManager.cs" />
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />

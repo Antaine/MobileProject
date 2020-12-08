@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         scoreText.text = player.position.z.ToString("0");
-        if(player.position.z>100){
+        if(player.position.z>1000){
             NextLevelMenu();
         }
     }
