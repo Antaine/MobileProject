@@ -6,7 +6,7 @@ public class DeskManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
     public float zSpawn = 0;
-    public float tileLength =15;
+    public float tileLength =150;
     public int numberOfTiles = 1;
     private List<GameObject> activeTiles = new List<GameObject>();
 
@@ -20,7 +20,7 @@ public class DeskManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerTransform.position.z - 35 >zSpawn-(numberOfTiles * tileLength)){
+        if(playerTransform.position.z - 75 >zSpawn-(numberOfTiles * tileLength)){
             SpawnTile(Random.Range(0,tilePrefabs.Length));
             DeleteTile();
         }
