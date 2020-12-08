@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject gameMenuUI;
     public GameObject gameOverUI;
+   
 
     // Update is called once per frame
     void Start(){
@@ -56,5 +57,9 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame(){
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    public void LoadNextLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }
