@@ -25,7 +25,9 @@ Need to add Game over screen, improved collisions and more tiles.
 Updated Menu with Ink Fonts.  
 Added Pause Menu.  
 Talked with designer about adding a quit to menu button.  
-Need to add ink to follow player.   Improve collisions that slow the player and death from ink.  
+Need to add ink to follow player. 
+Improve collisions that slow the player and death from ink.  
+Talk to designer about lives vs slow  
 Need to add more tiles andd extra levels.  
 Multiplayer add ghost, talk to designer about the scope of multiplayer being too big if other projects get in the way  
 
@@ -38,6 +40,6 @@ Ink kills Player
   
 Level complete and transition  
 Added Pause button  
-Generates Table for background  
+Generates Table for background    
   
 Swipe Controls  
