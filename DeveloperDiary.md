@@ -32,3 +32,12 @@ Multiplayer add ghost, talk to designer about the scope of multiplayer being too
 Added crouch,  
 improved movement  
 
+
+Game over Screen  
+Ink kills Player  
+  
+Level complete and transition  
+Added Pause button  
+Generates Table for background  
+  
+Swipe Controls  
