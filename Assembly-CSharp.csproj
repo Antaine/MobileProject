@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\StartManager.cs" />
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
      <Compile Include="Assets\__Scripts\DeskManager.cs" />
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
@@ -63,6 +62,7 @@
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Score.cs" />
+     <Compile Include="Assets\__Scripts\StartManager.cs" />
      <Compile Include="Assets\__Scripts\SwipeManager.cs" />
      <Compile Include="Assets\__Scripts\TileManager.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
