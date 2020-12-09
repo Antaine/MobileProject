@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
    // private float moveRate = 2.0f;
     private CharacterController controller;
     private Vector3 moveDirection;
+    public float loadDelay = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,31 +25,28 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection.z = moveSpeed;
         if (controller.isGrounded){
-            if(Input.GetKeyDown(KeyCode.RightArrow))
+            if(SwipeManager.swipeRight)
             {
                 desiredLane++;
                 if(desiredLane>2)
                     desiredLane = 2;  
                 }
-            if(Input.GetKeyDown(KeyCode.LeftArrow))
+            if(SwipeManager.swipeLeft)
             {
                 desiredLane--;
                 if(desiredLane<0)
                     desiredLane = 0;    
             }
 
-            if(Input.GetKeyDown(KeyCode.UpArrow))
+            if(SwipeManager.swipeUp)
             {
                 Jump();
             }
 
-            if(Input.GetKeyDown(KeyCode.LeftControl))
+            if(SwipeManager.swipeDown)
             {
                 Crouch();
-            }
-
-            if(Input.GetKeyUp(KeyCode.LeftControl)){
-                UnCrouch();
+                Invoke("UnCrouch",loadDelay);
             }
         }
         else{ moveDirection.y += gravityRate*Time.deltaTime;}
