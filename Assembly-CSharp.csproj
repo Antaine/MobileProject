@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\StartManager.cs" />
      <Compile Include="Assets\__Scripts\CameraFollow.cs" />
      <Compile Include="Assets\__Scripts\DeskManager.cs" />
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
