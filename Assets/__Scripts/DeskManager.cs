@@ -7,14 +7,20 @@ public class DeskManager : MonoBehaviour
     public GameObject[] tilePrefabs;
     public float zSpawn = 0;
     public float tileLength =150;
-    public int numberOfTiles = 1;
+    public int numberOfTiles = 3;
     private List<GameObject> activeTiles = new List<GameObject>();
 
     public Transform playerTransform;
     // Start is called before the first frame update
     void Start()
     {
-        SpawnTile(Random.Range(0,tilePrefabs.Length));       
+        for (int i = 0; i < numberOfTiles; i++){
+            if(i == 0){
+               SpawnTile(0);
+               i++;
+            }
+            SpawnTile(Random.Range(0,tilePrefabs.Length));
+        }        
     }
 
     // Update is called once per frame

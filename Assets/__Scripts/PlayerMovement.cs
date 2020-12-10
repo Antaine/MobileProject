@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 moveDirection;
     public float loadDelay = 1f;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection.z = moveSpeed;
         if (controller.isGrounded){
+            UnJump();
             if(SwipeManager.swipeRight)
             {
                 desiredLane++;
@@ -40,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
             if(SwipeManager.swipeUp)
             {
+                
                 Jump();
             }
 
@@ -64,12 +67,8 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(moveDir);
         else
             controller.Move(diff);
-       // transform.position = Vector3.Lerp(transform.position,targetPosition,360*Time.deltaTime);
-        //controller.center = controller.center;
         
     } 
-
-
 
     private void FixedUpdate(){
         controller.Move (moveDirection*Time.deltaTime);
@@ -77,6 +76,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(){
         moveDirection.y = jumpRate;
+        animator.SetBool("isJumping",true);
+    }
+
+    private void UnJump(){
+        animator.SetBool("isJumping",false);
     }
 
     private void Crouch(){
