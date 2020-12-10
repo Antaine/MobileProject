@@ -43,3 +43,9 @@ Added Pause button
 Generates Table for background    
   
 Swipe Controls  
+Improved Tile Spawning  
+Added Death From Obstacles  
+Changed Score to a Timer like the designer wanted  
+Added a Power up that gives the user a life  
+Encountered Bug where multiple collisions caused the power to not work as intended  
+Fixed Power Up  
