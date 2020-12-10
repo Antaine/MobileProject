@@ -8,17 +8,23 @@ public class Score : MonoBehaviour
 {
     public Transform player;
     public Text scoreText;
+    public Text finalScoreText;
     public GameObject nextLevelUI;
     public GameObject gameMenuUI;
     float currTime = 0f;
     float startTime = 0f;
     float distance = 0;
+    public static int score =0;
+    private float finalScore;
+
+
     // Update is called once per frame
     void Update()
     {
         currTime += 1*Time.deltaTime;
         scoreText.text = currTime.ToString("0");
         distance = player.position.z;
+        score = (int)currTime; 
         if(currTime>120){
             NextLevelMenu();
         }
@@ -26,6 +32,12 @@ public class Score : MonoBehaviour
 
     
     public void NextLevelMenu(){
+        Debug.Log(score);
+        finalScoreText.text = score.ToString("0");
+        if(score > PlayerPrefs.GetInt("HighScore", 0)){
+            PlayerPrefs.SetInt("HighScore", score);
+        }
+        
         Time.timeScale = 0f;
         gameMenuUI.SetActive(false);
         nextLevelUI.SetActive(true);
