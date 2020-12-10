@@ -10,11 +10,17 @@ public class Score : MonoBehaviour
     public Text scoreText;
     public GameObject nextLevelUI;
     public GameObject gameMenuUI;
+    float currTime = 0f;
+    float startTime = 0f;
+    float distance = 0;
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = player.position.z.ToString("0");
-        if(player.position.z>1000){
+        currTime += 1*Time.deltaTime;
+        Debug.Log(currTime);
+        scoreText.text = currTime.ToString("0");
+        distance = player.position.z;
+        if(currTime>120){
             NextLevelMenu();
         }
     }

@@ -55,15 +55,19 @@ public class PlayerMovement : MonoBehaviour
         }
         else{ moveDirection.y += gravityRate*Time.deltaTime;}
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
+
         if(desiredLane == 0)
         targetPosition += Vector3.left*laneSpacing;
+
         else if(desiredLane ==2)
             targetPosition += Vector3.right * laneSpacing;
 
         if(transform.position == targetPosition)
             return;
+            
         Vector3 diff = targetPosition - transform.position;
         Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
+        
         if(moveDir.sqrMagnitude < diff.sqrMagnitude)
             controller.Move(moveDir);
         else
