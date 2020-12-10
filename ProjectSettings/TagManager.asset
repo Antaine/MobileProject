@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - PowerUps
+  - Immune
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Ground
   - Player
   - Obstacles
-  - 
+  - PowerUps
   - 
   - 
   - 

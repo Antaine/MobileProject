@@ -17,7 +17,6 @@ public class Score : MonoBehaviour
     void Update()
     {
         currTime += 1*Time.deltaTime;
-        Debug.Log(currTime);
         scoreText.text = currTime.ToString("0");
         distance = player.position.z;
         if(currTime>120){

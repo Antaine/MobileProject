@@ -63,6 +63,7 @@
      <Compile Include="Assets\__Scripts\PlayerManager.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Score.cs" />
+     <Compile Include="Assets\__Scripts\Shield.cs" />
      <Compile Include="Assets\__Scripts\StartManager.cs" />
      <Compile Include="Assets\__Scripts\SwipeManager.cs" />
      <Compile Include="Assets\__Scripts\TileManager.cs" />

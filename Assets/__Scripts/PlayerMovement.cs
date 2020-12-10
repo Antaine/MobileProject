@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float jumpRate = 10.0f;
     public float gravityRate = -20.0f;
-    public float moveSpeed = 5.0f;
+    public float moveSpeed = 10.0f;
     public float laneSpacing = 4;
     private int desiredLane =1;
    // private float moveRate = 2.0f;
@@ -67,12 +67,11 @@ public class PlayerMovement : MonoBehaviour
             
         Vector3 diff = targetPosition - transform.position;
         Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
-        
+
         if(moveDir.sqrMagnitude < diff.sqrMagnitude)
             controller.Move(moveDir);
         else
-            controller.Move(diff);
-        
+            controller.Move(diff);       
     } 
 
     private void FixedUpdate(){
@@ -101,7 +100,31 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit){
-        if(hit.transform.tag == "Obstacle")
-        PlayerManager.gameOver = true;
+
+        if(hit.transform.tag == "Obstacle"){
+            if(PlayerManager.shielded == false)
+            {   
+                PlayerManager.gameOver = true;
+            } 
+
+            else
+            {
+                Debug.Log("Used Shield");
+                UseShield();
+            }
+        }
+    } 
+
+    
+    private void RestoreSpeed(){
+        moveSpeed = 10f;
+        controller.tag = "Player";
+        PlayerManager.shielded = false;
+    }
+
+    
+    public void UseShield(){
+        moveSpeed = 5.0f;
+        Invoke("RestoreSpeed",loadDelay/2);
     }
 }

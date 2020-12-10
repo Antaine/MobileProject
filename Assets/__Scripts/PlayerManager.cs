@@ -9,10 +9,12 @@ public static bool gameOver;
 [SerializeField] float loadDelay = 2.0f;
 public GameObject gameMenuUI;
 public GameObject gameOverMenuUI;
+public static bool shielded = false;
 
     void Start()
     {
         gameOver = false;
+        shielded = false;
     }
 
     // Update is called once per frame
@@ -29,4 +31,6 @@ public GameObject gameOverMenuUI;
         gameMenuUI.SetActive(false);
         Time.timeScale = 0f;
     }
+
+
 }
