@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDirection;
     public float loadDelay = 1f;
     public Animator animator;
+    public static bool gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -86,10 +87,17 @@ public class PlayerMovement : MonoBehaviour
     private void Crouch(){
         Debug.Log("Crouch worked");
         controller.height = 1.0f;
+        animator.SetBool("isCrouched",true);
     }
 
     private void UnCrouch(){
         Debug.Log("UnCrouch worked");
         controller.height = 2.0f;
+        animator.SetBool("isCrouched",false);
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit){
+        if(hit.transform.tag == "Obstacle")
+        PlayerManager.gameOver = true;
     }
 }

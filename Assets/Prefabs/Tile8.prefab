@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 486171927261376035}
   m_Layer: 0
   m_Name: Tape dispenser
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 1102889181992154, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
       propertyPath: m_Name
       value: Stapler_red (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102889181992154, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4090508217379498, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -449,6 +453,10 @@ PrefabInstance:
     - target: {fileID: 1102889181992154, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
       propertyPath: m_Name
       value: Stapler_red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102889181992154, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4090508217379498, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
       propertyPath: m_LocalPosition.x

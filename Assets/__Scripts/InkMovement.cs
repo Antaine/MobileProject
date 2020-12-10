@@ -7,15 +7,8 @@ public class InkMovement : MonoBehaviour
 {
     public float moveSpeed = 10.0f;
     private Vector3 moveDirection;
-    [SerializeField] float loadDelay = 2.0f;
-    public GameObject gameMenuUI;
-    public GameObject gameOverMenuUI;
-    
-    void Start()
-    {
-        //CharacterController controller = GetComponent<CharacterController>();
-    }
 
+    
     private void FixedUpdate(){
         CharacterController controller = GetComponent<CharacterController>();
         controller.Move (Vector3.back * Time.deltaTime);
@@ -28,15 +21,11 @@ public class InkMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
         print("Trigger from collision");
-        DeathScreen();
+        PlayerManager.gameOver = true;
        // Invoke("ReloadScene",loadDelay);
     }
 
-    void DeathScreen(){
-        gameOverMenuUI.SetActive(true);
-        gameMenuUI.SetActive(false);
-        Time.timeScale = 0f;
-    }
+
     private void ReloadScene(){
         SceneManager.LoadScene(0);
     }

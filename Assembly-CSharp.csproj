@@ -60,6 +60,7 @@
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\__Scripts\PlayerManager.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\Score.cs" />
      <Compile Include="Assets\__Scripts\StartManager.cs" />
