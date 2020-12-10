@@ -49,3 +49,5 @@ Changed Score to a Timer like the designer wanted
 Added a Power up that gives the user a life  
 Encountered Bug where multiple collisions caused the power to not work as intended  
 Fixed Power Up  
+Updated camera for phone aspect ratio  
+Added High score to main menu  
