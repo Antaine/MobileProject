@@ -16,7 +16,6 @@ public class Shield : MonoBehaviour
 
         if(other.tag == "Player")
         {
-            Debug.Log("Picked Up Shield");
             Destroy(gameObject);
             PlayerManager.shielded = true;
         }

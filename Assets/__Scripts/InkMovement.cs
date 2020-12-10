@@ -20,9 +20,7 @@ public class InkMovement : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        print("Trigger from collision");
         PlayerManager.gameOver = true;
-       // Invoke("ReloadScene",loadDelay);
     }
 
 

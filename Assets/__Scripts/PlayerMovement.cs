@@ -88,13 +88,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Crouch(){
-        Debug.Log("Crouch worked");
         controller.height = 1.0f;
         animator.SetBool("isCrouched",true);
     }
 
     private void UnCrouch(){
-        Debug.Log("UnCrouch worked");
         controller.height = 2.0f;
         animator.SetBool("isCrouched",false);
     }
@@ -109,7 +107,6 @@ public class PlayerMovement : MonoBehaviour
 
             else
             {
-                Debug.Log("Used Shield");
                 UseShield();
             }
         }
