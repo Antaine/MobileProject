@@ -16,6 +16,7 @@ public class Score : MonoBehaviour
     float distance = 0;
     public static int score =0;
     private float finalScore;
+    private string player1Name = MainMenu.player1Name;
 
 
     // Update is called once per frame
@@ -32,10 +33,11 @@ public class Score : MonoBehaviour
 
     
     public void NextLevelMenu(){
-        Debug.Log(score);
+        Debug.Log("Next Level Score: "+ score);
         finalScoreText.text = score.ToString("0");
         if(score > PlayerPrefs.GetInt("HighScore", 0)){
             PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.SetString("HighScoreName",player1Name);
         }
         
         Time.timeScale = 0f;

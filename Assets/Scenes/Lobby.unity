@@ -346,6 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelText: {fileID: 0}
+  playerName: {fileID: 0}
 --- !u!114 &193708233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,6 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelText: {fileID: 629246698}
+  playerName: {fileID: 927370113}
 --- !u!1 &842223283
 GameObject:
   m_ObjectHideFlags: 0

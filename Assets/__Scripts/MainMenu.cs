@@ -8,9 +8,22 @@ public class MainMenu : MonoBehaviour{
 
 public static int nextLevel = 1;
 public Text levelText;
+public Text playerName;
+public static string player1Name = "";
+public static int counter =0;
+
+void Start(){
+    if(SceneManager.GetActiveScene().buildIndex == 1 && counter ==0){
+        Debug.Log("Lobby Loaded");
+        playerName.text = player1Name;
+        counter++;
+    }
+}
 public void PlayGame()
 {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+    player1Name = playerName.text;
+    Debug.Log(player1Name);
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +nextLevel);
     nextLevel = 0;
 }
 
