@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float loadDelay = 1f;
     public Animator animator;
     public static bool gameOver;
+    public AudioSource jumpSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 
                 Jump();
+
             }
 
             if(SwipeManager.swipeDown)
@@ -79,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump(){
+        FindObjectOfType<AudioManager>().Play("PlayerJump");
         moveDirection.y = jumpRate;
         animator.SetBool("isJumping",true);
     }
@@ -103,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
             if(PlayerManager.shielded == false)
             {   
                 PlayerManager.gameOver = true;
+              
             } 
 
             else

@@ -12,7 +12,9 @@ public Text playerName;
 public static string player1Name = "";
 public static int counter =0;
 
+
 void Start(){
+    FindObjectOfType<AudioManager>().Play("MenuMusic");
     if(SceneManager.GetActiveScene().buildIndex == 1 && counter ==0){
         Debug.Log("Lobby Loaded");
         playerName.text = player1Name;
@@ -30,6 +32,8 @@ public void PlayGame()
 public void LoadLevel()
 {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +nextLevel);
+    FindObjectOfType<AudioManager>().Pause("MenuMusic");
+    FindObjectOfType<AudioManager>().Play("Level1Music");
 }
 
 public void SetLevelOffice()
