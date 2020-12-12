@@ -33,7 +33,7 @@ public class Score : MonoBehaviour
 
     
     public void NextLevelMenu(){
-        Debug.Log("Next Level Score: "+ score);
+        FindObjectOfType<AudioManager>().Play("VictorySound");
         finalScoreText.text = score.ToString("0");
         if(score > PlayerPrefs.GetInt("HighScore", 0)){
             PlayerPrefs.SetInt("HighScore", score);

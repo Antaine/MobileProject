@@ -16,6 +16,7 @@ public class Shield : MonoBehaviour
 
         if(other.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("PickUpSound");
             Destroy(gameObject);
             PlayerManager.shielded = true;
         }

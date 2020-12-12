@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpRate = 10.0f;
     public float gravityRate = -20.0f;
     public float moveSpeed = 10.0f;
-    public float laneSpacing = 4;
+    public float laneSpacing = 3;
     private int desiredLane =1;
    // private float moveRate = 2.0f;
     private CharacterController controller;
@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public float loadDelay = 1f;
     public Animator animator;
     public static bool gameOver;
-    public AudioSource jumpSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -115,7 +114,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     } 
-
     
     private void RestoreSpeed(){
         moveSpeed = 10f;

@@ -64,4 +64,16 @@ public class PauseMenu : MonoBehaviour
     public void LoadNextLevel(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
+
+    public void ClickSound(){
+    FindObjectOfType<AudioManager>().Play("ClickSound");
+    }
+
+    public void InputSound(){
+    FindObjectOfType<AudioManager>().Play("InputSound");
+    }
+
+    public void SliderSound(){
+    FindObjectOfType<AudioManager>().Play("SliderSound");
+    }
 }

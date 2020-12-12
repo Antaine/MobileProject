@@ -16,7 +16,6 @@ public static int counter =0;
 void Start(){
     FindObjectOfType<AudioManager>().Play("MenuMusic");
     if(SceneManager.GetActiveScene().buildIndex == 1 && counter ==0){
-        Debug.Log("Lobby Loaded");
         playerName.text = player1Name;
         counter++;
     }
@@ -59,6 +58,18 @@ public void QuitGame()
     Debug.Log("Quit");
     Application.Quit();
 
+}
+
+public void ClickSound(){
+    FindObjectOfType<AudioManager>().Play("ClickSound");
+}
+
+public void InputSound(){
+    FindObjectOfType<AudioManager>().Play("InputSound");
+}
+
+public void SliderSound(){
+    FindObjectOfType<AudioManager>().Play("SliderSound");
 }
 
 }

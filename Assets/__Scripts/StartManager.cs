@@ -11,6 +11,7 @@ public class StartManager : MonoBehaviour
     {
         if(SwipeManager.tap)
         {
+            FindObjectOfType<AudioManager>().Play("ClickSound");
             Time.timeScale = 1f;
             startMenuUI.SetActive(false);
             gameMenuUI.SetActive(true);
