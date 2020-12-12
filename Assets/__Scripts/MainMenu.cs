@@ -55,6 +55,10 @@ public void QuitGame(){
 
 }
 
+public void LoadMenu(){
+    SceneManager.LoadScene(0);
+}
+
 public void ClickSound(){
     FindObjectOfType<AudioManager>().Play("ClickSound");
 }
