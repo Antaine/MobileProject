@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public float loadDelay = 1f;
     public Animator animator;
     public static bool gameOver;
-
     // Start is called before the first frame update
     void Start()
     {

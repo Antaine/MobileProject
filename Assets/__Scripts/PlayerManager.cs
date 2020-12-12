@@ -15,6 +15,8 @@ public Text finalScoreText;
 private string player1Name = MainMenu.player1Name;
 int finalScore =0;
 public static bool shielded = false;
+public Image shieldSprite;
+
     void Start()
     {
         gameOver = false;
@@ -28,18 +30,23 @@ public static bool shielded = false;
         {
             DeathScreen();
         }
+
+        if(shielded == true)
+        {
+            shieldSprite.enabled = true;
+        }
+
+        else if(!shielded)
+        {
+            shieldSprite.enabled = false;
+        }
     }
 
     public void DeathScreen(){
         finalScore = Score.score;
-       // Debug.Log(finalScore);
         finalScoreText.text = finalScore.ToString("0");
         if(finalScore > PlayerPrefs.GetInt("HighScore", 0)){
             PlayerPrefs.SetInt("HighScore", finalScore);
-          //  Debug.Log("DeathScreen player1name");
-          //  Debug.Log(player1Name);
-         //   Debug.Log("Highscore DeathScreen");
-         //   Debug.Log(PlayerPrefs.GetString("HighScoreName",""));
             PlayerPrefs.SetString("HighScoreName",player1Name);
         }
         gameOverMenuUI.SetActive(true);
