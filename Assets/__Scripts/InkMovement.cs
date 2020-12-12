@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class InkMovement : MonoBehaviour
 {
     public float moveSpeed = 10.0f;
     private Vector3 moveDirection;
-
     
     private void FixedUpdate(){
         CharacterController controller = GetComponent<CharacterController>();
@@ -22,7 +19,6 @@ public class InkMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         PlayerManager.gameOver = true;
     }
-
 
     private void ReloadScene(){
         SceneManager.LoadScene(0);

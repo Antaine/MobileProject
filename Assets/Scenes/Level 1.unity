@@ -1598,7 +1598,6 @@ MonoBehaviour:
   gameOverMenuUI: {fileID: 873426598}
   finalScoreText: {fileID: 847181605}
   shieldSprite: {fileID: 1229311159}
-  deathSound: {fileID: 0}
 --- !u!4 &728676492
 Transform:
   m_ObjectHideFlags: 0
@@ -1733,6 +1732,7 @@ MonoBehaviour:
   gameMenuUI: {fileID: 1123126685}
   gameOverUI: {fileID: 873426598}
   startGameUI: {fileID: 2125521328}
+  audioMixer: {fileID: 24100000, guid: f77da553d27fb4346a1372f5b20f8f6a, type: 2}
 --- !u!1 &759363859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,8 +2142,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 743649926}
-        m_MethodName: SliderSound
-        m_Mode: 1
+        m_MethodName: SetVolume
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

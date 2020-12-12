@@ -18,20 +18,15 @@ public class Score : MonoBehaviour
     private float finalScore;
     private string player1Name = MainMenu.player1Name;
 
-
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         currTime += 1*Time.deltaTime;
         scoreText.text = currTime.ToString("0");
         distance = player.position.z;
         score = (int)currTime; 
-        if(currTime>120){
+        if(currTime>120)
             NextLevelMenu();
-        }
     }
 
-    
     public void NextLevelMenu(){
         FindObjectOfType<AudioManager>().Play("VictorySound");
         finalScoreText.text = score.ToString("0");
@@ -44,6 +39,4 @@ public class Score : MonoBehaviour
         gameMenuUI.SetActive(false);
         nextLevelUI.SetActive(true);
     }
-
-
 }

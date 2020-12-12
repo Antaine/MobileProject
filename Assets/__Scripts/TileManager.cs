@@ -13,28 +13,23 @@ public class TileManager : MonoBehaviour
     private int count =0;
     private List<GameObject> activeTiles = new List<GameObject>();
     private List<GameObject> activeShields = new List<GameObject>();
-
     public Transform playerTransform;
-    // Start is called before the first frame update
+
     void Start()
     {
-       for (int i = 0; i < numberOfTiles; i++)
-       {
-           if(i == 0){
-               SpawnTile(0);
-               i++;
-           }
-           else if(i%shieldRate == 0)
-           {
-                //DeleteShields();
+        for (int i = 0; i < numberOfTiles; i++)
+        {
+            if(i == 0){
+                SpawnTile(0);
+                i++;
+            }
+           else if(i%shieldRate == 0){
                 SpawnShield();   
-           }
-
+            }
             SpawnTile(Random.Range(1,tilePrefabs.Length));       
-       }
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(playerTransform.position.z - 35 >zSpawn-(numberOfTiles * tileLength)){
@@ -69,7 +64,6 @@ public class TileManager : MonoBehaviour
     }
 
     public void DeleteShields(){
-       // Destroy(activeShields[0]);
         activeShields.RemoveAt(0);
     }
 }

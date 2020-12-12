@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -10,24 +11,20 @@ public class PauseMenu : MonoBehaviour
     public GameObject gameMenuUI;
     public GameObject gameOverUI;
     public GameObject startGameUI;
-
+    public AudioMixer audioMixer;
 
     // Update is called once per frame
     void Start(){
         Time.timeScale = 0f;
         startGameUI.SetActive(true);
     }
-    void Update()
-    {
+    void Update(){
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if(GameIsPaused){
+            if(GameIsPaused)
                 Resume();
-            }
             else
-            {
                 Pause();
-            }
         }
     }
 
@@ -76,4 +73,8 @@ public class PauseMenu : MonoBehaviour
     public void SliderSound(){
     FindObjectOfType<AudioManager>().Play("SliderSound");
     }
+
+    public void SetVolume(float volume){
+    audioMixer.SetFloat("Volume",volume);
+}
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,46 +8,37 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 10.0f;
     public float laneSpacing = 3;
     private int desiredLane =1;
-   // private float moveRate = 2.0f;
     private CharacterController controller;
     private Vector3 moveDirection;
     public float loadDelay = 1f;
     public Animator animator;
     public static bool gameOver;
-    // Start is called before the first frame update
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         moveDirection.z = moveSpeed;
         if (controller.isGrounded){
             UnJump();
-            if(SwipeManager.swipeRight)
-            {
+            if(SwipeManager.swipeRight){
                 desiredLane++;
                 if(desiredLane>2)
                     desiredLane = 2;  
-                }
-            if(SwipeManager.swipeLeft)
-            {
+            }
+            if(SwipeManager.swipeLeft){
                 desiredLane--;
                 if(desiredLane<0)
                     desiredLane = 0;    
             }
 
-            if(SwipeManager.swipeUp)
-            {
-                
+            if(SwipeManager.swipeUp)   
                 Jump();
 
-            }
-
-            if(SwipeManager.swipeDown)
-            {
+            if(SwipeManager.swipeDown){
                 Crouch();
                 Invoke("UnCrouch",loadDelay);
             }
@@ -58,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
 
         if(desiredLane == 0)
-        targetPosition += Vector3.left*laneSpacing;
+            targetPosition += Vector3.left*laneSpacing;
 
         else if(desiredLane ==2)
             targetPosition += Vector3.right * laneSpacing;
@@ -100,18 +89,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit){
-
         if(hit.transform.tag == "Obstacle"){
-            if(PlayerManager.shielded == false)
-            {   
+            if(PlayerManager.shielded == false)   
                 PlayerManager.gameOver = true;
-              
-            } 
-
             else
-            {
                 UseShield();
-            }
         }
     } 
     
@@ -121,7 +103,6 @@ public class PlayerMovement : MonoBehaviour
         PlayerManager.shielded = false;
     }
 
-    
     public void UseShield(){
         moveSpeed = 5.0f;
         Invoke("RestoreSpeed",loadDelay/2);

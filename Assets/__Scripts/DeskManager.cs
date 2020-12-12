@@ -9,11 +9,9 @@ public class DeskManager : MonoBehaviour
     public float tileLength =150;
     public int numberOfTiles = 3;
     private List<GameObject> activeTiles = new List<GameObject>();
-
     public Transform playerTransform;
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    void Start(){
         for (int i = 0; i < numberOfTiles; i++){
             if(i == 0){
                SpawnTile(0);
@@ -23,9 +21,7 @@ public class DeskManager : MonoBehaviour
         }        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         if(playerTransform.position.z - 75 >zSpawn-(numberOfTiles * tileLength)){
             SpawnTile(Random.Range(0,tilePrefabs.Length));
             DeleteTile();
@@ -43,5 +39,3 @@ public class DeskManager : MonoBehaviour
         activeTiles.RemoveAt(0);
     }
 }
-
-

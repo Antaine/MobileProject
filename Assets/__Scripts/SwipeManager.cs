@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SwipeManager : MonoBehaviour
 {
@@ -8,7 +6,6 @@ public class SwipeManager : MonoBehaviour
     private bool isDragging = false;
     private Vector2 startTouch, swipeDelta;
 
-    // Update is called once per frame
    private void Update()
     {
         tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
@@ -42,12 +39,10 @@ public class SwipeManager : MonoBehaviour
         //Calculate Distance
         swipeDelta = Vector2.zero;
         if(isDragging){
-            if(Input.touches.Length<0){
+            if(Input.touches.Length<0)
                 swipeDelta = Input.touches[0].position - startTouch;
-            }
-            else if(Input.GetMouseButton(0)){
+            else if(Input.GetMouseButton(0))
                 swipeDelta = (Vector2)Input.mousePosition - startTouch;
-            }
         }
 
         if(swipeDelta.magnitude > 100){

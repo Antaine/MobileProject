@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour{
 
@@ -11,7 +12,7 @@ public Text levelText;
 public Text playerName;
 public static string player1Name = "";
 public static int counter =0;
-
+public AudioMixer audioMixer;
 
 void Start(){
     FindObjectOfType<AudioManager>().Play("MenuMusic");
@@ -20,41 +21,35 @@ void Start(){
         counter++;
     }
 }
-public void PlayGame()
-{
+public void PlayGame(){
     player1Name = playerName.text;
     Debug.Log(player1Name);
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +nextLevel);
     nextLevel = 0;
 }
 
-public void LoadLevel()
-{
+public void LoadLevel(){
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +nextLevel);
     FindObjectOfType<AudioManager>().Pause("MenuMusic");
     FindObjectOfType<AudioManager>().Play("Level1Music");
 }
 
-public void SetLevelOffice()
-{
+public void SetLevelOffice(){
     nextLevel =1;
     levelText.text = "Level: Office";
 }
 
-public void SetLevelKitchen()
-{
+public void SetLevelKitchen(){
     nextLevel = 2;
     levelText.text = "Level: Kitchen";
 }
 
-public void SetLevelCity()
-{
+public void SetLevelCity(){
     nextLevel =3;
     levelText.text = "Level: City";
 }
 
-public void QuitGame()
-{
+public void QuitGame(){
     Debug.Log("Quit");
     Application.Quit();
 
@@ -71,5 +66,7 @@ public void InputSound(){
 public void SliderSound(){
     FindObjectOfType<AudioManager>().Play("SliderSound");
 }
-
+public void SetVolume(float volume){
+    audioMixer.SetFloat("Volume",volume);
+}
 }
