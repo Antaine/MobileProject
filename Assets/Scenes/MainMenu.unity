@@ -1137,8 +1137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807198287c29dd748ace75f6cdfb5867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
-  playerName: {fileID: 0}
+  levelText: {fileID: 629246698}
+  playerName: {fileID: 927370113}
   audioMixer: {fileID: 24100000, guid: f77da553d27fb4346a1372f5b20f8f6a, type: 2}
 --- !u!114 &197621615
 MonoBehaviour:

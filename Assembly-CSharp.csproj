@@ -90,6 +90,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\POLYGON city pack\Read_me.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

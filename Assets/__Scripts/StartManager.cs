@@ -16,7 +16,5 @@ public class StartManager : MonoBehaviour
             startMenuUI.SetActive(false);
             gameMenuUI.SetActive(true);
         }
-
     }
-
 }
