@@ -51,3 +51,5 @@ Encountered Bug where multiple collisions caused the power to not work as intend
 Fixed Power Up  
 Updated camera for phone aspect ratio  
 Added High score to main menu  
+
+https://github.com/VeriorPies/ParrelSync(Testing Multiplayer)

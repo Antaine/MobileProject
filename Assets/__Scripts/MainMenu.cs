@@ -16,13 +16,10 @@ public AudioMixer audioMixer;
 
 void Start(){
     FindObjectOfType<AudioManager>().Play("MenuMusic");
-    if(SceneManager.GetActiveScene().buildIndex == 1 && counter ==0){
-        playerName.text = player1Name;
-        counter++;
-    }
+    playerName.text = player1Name;
 }
 public void PlayGame(){
-    player1Name = playerName.text;
+   
     Debug.Log(player1Name);
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +nextLevel);
     nextLevel = 0;
@@ -35,18 +32,23 @@ public void LoadLevel(){
 }
 
 public void SetLevelOffice(){
-    nextLevel =1;
+    nextLevel =2;
     levelText.text = "Level: Office";
 }
 
 public void SetLevelKitchen(){
-    nextLevel = 2;
+    nextLevel = 3;
     levelText.text = "Level: Kitchen";
 }
 
 public void SetLevelCity(){
-    nextLevel =3;
+    nextLevel =4;
     levelText.text = "Level: City";
+}
+
+public void SetLevelMulti(){
+    nextLevel =5;
+    levelText.text = "Level: Office M";
 }
 
 public void QuitGame(){
@@ -72,5 +74,10 @@ public void SliderSound(){
 }
 public void SetVolume(float volume){
     audioMixer.SetFloat("Volume",volume);
+}
+
+public void GetPlayerName(string name){
+    player1Name = name;
+    playerName.text = player1Name;
 }
 }
