@@ -684,6 +684,10 @@
       <Project>{AB894775-0556-31C6-A184-6E0E5A5BC2B4}</Project>
       <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{899EF736-189A-3184-EE39-883F52D09133}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Cloud.csproj">
       <Project>{A0DB3474-8066-2584-27FC-BBE3DDE5E754}</Project>
       <Name>Mirror.Cloud</Name>
@@ -719,10 +723,6 @@
     <ProjectReference Include="SimpleWebTransport.csproj">
       <Project>{FCC24973-1847-4A97-559F-49F29C4513AF}</Project>
       <Name>SimpleWebTransport</Name>
-    </ProjectReference>
-    <ProjectReference Include="ParrelSync.csproj">
-      <Project>{899EF736-189A-3184-EE39-883F52D09133}</Project>
-      <Name>ParrelSync</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
