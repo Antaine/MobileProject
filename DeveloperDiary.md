@@ -52,4 +52,16 @@ Fixed Power Up
 Updated camera for phone aspect ratio  
 Added High score to main menu  
 
-https://github.com/VeriorPies/ParrelSync(Testing Multiplayer)
+https://github.com/VeriorPies/ParrelSync(Testing Multiplayer)  
+Added a level Select  
+Created a lobby  
+Save Player name to Highscore  
+Added Background music  
+
+Added Level Music and Shield Icon 
+Added Audio Manager To replace Triggers Sounds 
+Sound Effects  
+Menu Sounds  
+Fixed Bug With Collisions in testing  
+Master Audio Slider  
+Multiplayer Menu  
