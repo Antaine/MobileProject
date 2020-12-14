@@ -62,6 +62,8 @@
      <Compile Include="Assets\__Scripts\HighScore.cs" />
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
+     <Compile Include="Assets\__Scripts\MultiPlayerMovement.cs" />
+     <Compile Include="Assets\__Scripts\NetworkManagerInk.cs" />
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />
      <Compile Include="Assets\__Scripts\PlayerManager.cs" />
      <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
@@ -667,10 +669,6 @@
       <Project>{91A90D8E-CE24-51CC-29E3-0BE3A7C9D583}</Project>
       <Name>Telepathy</Name>
     </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.Cloud.Pong.csproj">
-      <Project>{757FEAFD-91A3-5E06-5287-C75CD662C0FC}</Project>
-      <Name>Mirror.Examples.Cloud.Pong</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
       <Project>{EF0A25D2-B990-41F7-CEC8-E97EC66A67A1}</Project>
       <Name>Mirror</Name>
@@ -686,10 +684,6 @@
     <ProjectReference Include="kcp2k.csproj">
       <Project>{22AFECD8-E1A4-DE70-1B85-9EDA92C81443}</Project>
       <Name>kcp2k</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.Cloud.GUI.csproj">
-      <Project>{F17ECEC0-8D47-ECA0-02C7-E441836DA0D6}</Project>
-      <Name>Mirror.Examples.Cloud.GUI</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleWebTransport.csproj">
       <Project>{FCC24973-1847-4A97-559F-49F29C4513AF}</Project>

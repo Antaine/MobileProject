@@ -12,7 +12,6 @@ public class Score : MonoBehaviour
     public GameObject nextLevelUI;
     public GameObject gameMenuUI;
     float currTime = 0f;
-    float startTime = 0f;
     float distance = 0;
     public static int score =0;
     private float finalScore;

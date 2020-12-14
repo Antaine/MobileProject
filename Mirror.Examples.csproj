@@ -62,12 +62,6 @@
      <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\ZoneHandler.cs" />
      <Compile Include="Assets\Mirror\Examples\Basic\Scripts\BasicNetManager.cs" />
      <Compile Include="Assets\Mirror\Examples\Basic\Scripts\Player.cs" />
-     <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\BenchmarkNetworkManager.cs" />
-     <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\MonsterMovement.cs" />
-     <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatNetworkManager.cs" />
-     <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatWindow.cs" />
-     <Compile Include="Assets\Mirror\Examples\Chat\Scripts\Player.cs" />
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\MultiSceneNetManager.cs" />
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsCollision.cs" />
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsSimulator.cs" />
@@ -76,20 +70,6 @@
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\RandomColor.cs" />
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Reward.cs" />
      <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Spawner.cs" />
-     <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Ball.cs" />
-     <Compile Include="Assets\Mirror\Examples\Pong\Scripts\NetworkManagerPong.cs" />
-     <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Player.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomManagerExt.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomPlayerExt.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerScore.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\RandomColor.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\Reward.cs" />
-     <Compile Include="Assets\Mirror\Examples\Room\Scripts\Spawner.cs" />
-     <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Projectile.cs" />
-     <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Tank.cs" />
-     <None Include="Assets\Mirror\Examples\Tanks\Textures\(Public Domain) Dirt Hand Painted Texture\Dirt Hand Painted Texture - License.txt" />
-     <None Include="Assets\Mirror\Examples\Tanks\Models\(Public Domain) Recon_Tank\Recon_Tank - License.txt" />
      <None Include="Assets\Mirror\Examples\Mirror.Examples.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
