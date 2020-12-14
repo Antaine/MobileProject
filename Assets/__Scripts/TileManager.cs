@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Manages the Rate, Position and Pattern of Prefab Tile Spawning to make the track/// </summary>
 public class TileManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
@@ -15,6 +16,7 @@ public class TileManager : MonoBehaviour
     private List<GameObject> activeShields = new List<GameObject>();
     public Transform playerTransform;
 
+//Spawns Starting Tiles
     void Start()
     {
         for (int i = 0; i < numberOfTiles; i++)
@@ -30,6 +32,7 @@ public class TileManager : MonoBehaviour
         }
     }
 
+//Controls spawning and deleting of tiles based on player movement
     void Update()
     {
         if(playerTransform.position.z - 35 >zSpawn-(numberOfTiles * tileLength)){
@@ -45,24 +48,24 @@ public class TileManager : MonoBehaviour
             count =0;
         }
     }
-
+//Spawns Tiels
     public void SpawnTile(int tileIndex){
         GameObject go = Instantiate(tilePrefabs[tileIndex],transform.forward * zSpawn, transform.rotation);
         activeTiles.Add(go);
         zSpawn +=tileLength;
     }
-
+//Spawns Shields
     public void SpawnShield(){
         GameObject go = Instantiate(shield,transform.forward * zSpawn,transform.rotation);
         activeShields.Add(go);
         go.transform.position =  new Vector3(0,1,zSpawn);
     }
-
+//Deletes Tiles
     public void DeleteTile(){
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
     }
-
+//Deletes Shields
     public void DeleteShields(){
         activeShields.RemoveAt(0);
     }

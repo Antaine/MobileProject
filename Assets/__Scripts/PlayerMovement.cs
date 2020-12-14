@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Handles the player movement and interaction with the game world
+/// Moves between lanes, jumps, crouches and handles collison witrh Obstacles
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
     public float jumpRate = 10.0f;
@@ -13,12 +16,13 @@ public class PlayerMovement : MonoBehaviour
     public float loadDelay = 1f;
     public Animator animator;
     public static bool gameOver;
-
+    //Get Controller
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
 
+//Gets Input & Calculates Player Movement
     void Update()
     {
         moveDirection.z = moveSpeed;
@@ -63,31 +67,31 @@ public class PlayerMovement : MonoBehaviour
         else
             controller.Move(diff);       
     } 
-
+//Moves Player
     private void FixedUpdate(){
         controller.Move (moveDirection*Time.deltaTime);
     }
-
+//Jump and Trigger Animation
     private void Jump(){
         FindObjectOfType<AudioManager>().Play("PlayerJump");
         moveDirection.y = jumpRate;
         animator.SetBool("isJumping",true);
     }
-
+//Reset Jumping Animation
     private void UnJump(){
         animator.SetBool("isJumping",false);
     }
-
+//Reduce hitbox and trigger Animation
     private void Crouch(){
         controller.height = 1.0f;
         animator.SetBool("isCrouched",true);
     }
-
+//Reset Hitbox and Running Animation
     private void UnCrouch(){
         controller.height = 2.0f;
         animator.SetBool("isCrouched",false);
     }
-
+//Trigger Game over Condition
     private void OnControllerColliderHit(ControllerColliderHit hit){
         if(hit.transform.tag == "Obstacle"){
             if(PlayerManager.shielded == false)   
@@ -96,13 +100,13 @@ public class PlayerMovement : MonoBehaviour
                 UseShield();
         }
     } 
-    
+//Restores Speed after Collision    
     private void RestoreSpeed(){
         moveSpeed = 10f;
         controller.tag = "Player";
         PlayerManager.shielded = false;
     }
-
+//Uses Power Up
     public void UseShield(){
         moveSpeed = 5.0f;
         Invoke("RestoreSpeed",loadDelay/2);

@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
-
+/// <summary>
+/// Handles Input as swiping Controls to be used in the PlayerMovement Script
+/// Differentiates betwen tap and swipe
+/// Then calculates the direction of the swipe
+/// </summary>
 public class SwipeManager : MonoBehaviour
 {
     public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
@@ -10,6 +14,7 @@ public class SwipeManager : MonoBehaviour
     {
         tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
         #region Standalone Inputs
+        //Checks for tap
         if(Input.GetMouseButtonDown(0)){
             tap = true;
             isDragging = true;
@@ -22,6 +27,7 @@ public class SwipeManager : MonoBehaviour
         #endregion
 
         #region  Mobile Input
+        //Checks for Swipe
         if(Input.touches.Length>0){
             if(Input.touches[0].phase == TouchPhase.Began){
                 tap = true;
@@ -44,7 +50,7 @@ public class SwipeManager : MonoBehaviour
             else if(Input.GetMouseButton(0))
                 swipeDelta = (Vector2)Input.mousePosition - startTouch;
         }
-
+        //Calculate Direction
         if(swipeDelta.magnitude > 100){
             float x = swipeDelta.x;
             float y = swipeDelta.y;
@@ -54,7 +60,6 @@ public class SwipeManager : MonoBehaviour
                 else
                     swipeRight = true;
             }
-
             else{
                 if(y<0)
                     swipeDown = true;
@@ -64,7 +69,7 @@ public class SwipeManager : MonoBehaviour
             Reset();
         }
     }
-
+    //Resets
     private void Reset(){
         startTouch = swipeDelta = Vector2.zero;
         isDragging = false;

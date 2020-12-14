@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using System;
-
+/// <summary>
+/// Manages Audio for Game
+/// </summary>
 public class AudioManager : MonoBehaviour
 {
+    //Array of Sounds
     public Sound[] sounds;
-    // Start is called before the first frame update
+
+    //Get Array of Sounds
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -18,6 +22,7 @@ public class AudioManager : MonoBehaviour
         }
     }
     
+    //Play Sound
     public void Play(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if(s == null){
@@ -26,7 +31,7 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
-
+    //Pause Sound
     public void Pause(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if(s == null){

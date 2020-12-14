@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Detects Collision of Player and Shield
+/// Destroys Shield
+/// And Plays Pickup Audio
+/// </summary>
 public class Shield : MonoBehaviour
 {
     void Update()

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-
+/// <summary>
+/// Sound Object that is added to audio Manager
+/// </summary>
 [System.Serializable]
 public class Sound
 {

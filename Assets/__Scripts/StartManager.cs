@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Starts Game After Tap
+/// </summary>
 public class StartManager : MonoBehaviour
 {
     public GameObject gameMenuUI;

@@ -62,7 +62,6 @@
      <Compile Include="Assets\__Scripts\HighScore.cs" />
      <Compile Include="Assets\__Scripts\InkMovement.cs" />
      <Compile Include="Assets\__Scripts\MainMenu.cs" />
-     <Compile Include="Assets\__Scripts\MultiPlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\NetworkManagerInk.cs" />
      <Compile Include="Assets\__Scripts\PauseMenu.cs" />
      <Compile Include="Assets\__Scripts\PlayerManager.cs" />

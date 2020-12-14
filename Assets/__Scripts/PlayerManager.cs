@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Handles Player Conditions,
+/// Power Ups
+/// And player Death
+/// </summary>
 public class PlayerManager : MonoBehaviour
 {
     public static bool gameOver;
@@ -16,7 +20,7 @@ public class PlayerManager : MonoBehaviour
         gameOver = false;
         shielded = false;
     }
-
+// Avoids Death if player is shielded
     void Update(){
         if(gameOver)
             DeathScreen();
@@ -28,7 +32,7 @@ public class PlayerManager : MonoBehaviour
         else if(!shielded)
             shieldSprite.enabled = false;
     }
-
+//Death Sequence
     public void DeathScreen(){
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
         finalScoreText.text = Score.score.ToString("0");
