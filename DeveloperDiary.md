@@ -1,4 +1,4 @@
-November 16th -
+November 16th -  
 I created a temporary plane to test player movement. I then added a basic player model of a cylinder to test the player movement script.  
 Then I created a basic script that moves the player forward at a constant rate which will serve the constant movement for the endless runner. The first problem is  
 while testing the player will eventually fall off and making the plane longer will not be optimal. I have decided to look into spawning/generation to deal with this.  
@@ -15,22 +15,21 @@ November 29th -
 After researching spawning planes and decided on creating tiles to spawn that will add spawn in a random order at a fixed distance to create a different track every time. I used blender to create a notepad asset to serve as the ground for all the tiles. This took longer than expected and I talked to the designer about needing to use simpler assets as it's to time consuming to make the more specific assets and so I need to use ones available from the asset store.  
 
 I created Tiles with the notepad from blender with objects from the design doc.  https://assetstore.unity.com/packages/3d/props/office-supplies-low-poly-105519  
-These prefabs include objects suited for jumping. avoiding and ssliding under to make the core gameplay of the game. Need to add Death collisions later on as they only slow the player at the moment.
+These prefabs include objects suited for jumping. avoiding and sliding under to make the core gameplay of the game. Need to add Death collisions later on as they only slow the player at the moment.  
+Tiles now generate infinitely allowing hte player to run endlessly. This a vital part of the project that was not a complex as it seems at first. They also generate randomly allowing the game to remain fresh. Death Collisions Still need to be added.   
 
+December 2nd -  
+Added a basic main menus that allows the player to load level 1 or quit the game. It still needs to be stylized which I am going to leave till after the functionality is completed. I then added the template of the options menu with no functionality at the moment as the audio slider cannot be tested till music is added to the game.    
 
-Tiles Randomly generate infinitely.
-Collisions, Death screen and Menus need to be implemented.  
-
-Main menu with play & quit functions working.  
-Options menu implemented with no functionality
-
-Talked to game designer about the importance of the asthetics and leaving them to last as designing assets in blender slows done development(Through email).
-
-Added basic score.  
-Talked with Designer about swapping the timer with a distance counter for better gameflow.  
+Talked to designer over email that I will focus on the fuctionality and do the asthetics later and things like the menu and UI may remain simple if there is not enough time.  
+December 3rd -  
+Added a basic score system that currently takes in the player distance to update a score element in hud of the player giving a sense of progress. This will be changed to a timer later on in development and tested to make sure no elements such as dying or pausing interfer with this when they are added. I will look into this more.  
+Considered keeping the distance over the timer but after reviewing the game doc I believe the timer suits the game more.  
 Need to add Game over screen, improved collisions and more tiles.  
-  
-Updated Menu with Ink Fonts.  
+
+December 5th -  
+
+Updated Menu with Ink
 Added Pause Menu.  
 Talked with designer about adding a quit to menu button.  
 Need to add ink to follow player. 
