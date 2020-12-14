@@ -1,14 +1,22 @@
-I created a plane and basic horizontal movement with the player always moving forward.  
-Need to change movement so it supports lanes and the player does not fall off.  
-  
-Update movement to support lanes and move a fixed amount. Need to add jumping, gravity and a camera follow mechanic.  
-  
-Added a basic Jump and gravity.
-Camera now folloes the player.  
+November 16th -
+I created a temporary plane to test player movement. I then added a basic player model of a cylinder to test the player movement script.  
+Then I created a basic script that moves the player forward at a constant rate which will serve the constant movement for the endless runner. The first problem is  
+while testing the player will eventually fall off and making the plane longer will not be optimal. I have decided to look into spawning/generation to deal with this.  
+The playerMovement script only takes movement on the horizontal axis as this will achieve a fixed movement to avoid collision with obstacles later on.    
 
-Used blender to create a notebook asset.
-Created Tiles to replace the plane with objects from office supplies as obstacles.  
-Need to generate tiles so the track doesn't run out.  
+November 24th -
+Added a CameraFollow script that allows the camera to follow the player which is ideal for endless runners.  
+Updated the movement to move left and right a fixed amount like other endless runners to quickly avoid obstacles. This also makes spawning obstacles  
+much easier as They will only need to spawn in 3 locations the middle, left or right.  
+Added Jumping whichh will be used to avoid smaller obstacles later on.  
+Player Continues to rise so i added grvity in the player movement script rather then the rigidbody as this allows me to customise it to tweek the jumping and making it tighter later on. I also changed the movemment to only go left and right till they make it to the final lane on their respective sides.  
+
+November 29th - 
+After researching spawning planes and decided on creating tiles to spawn that will add spawn in a random order at a fixed distance to create a different track every time. I used blender to create a notepad asset to serve as the ground for all the tiles. This took longer than expected and I talked to the designer about needing to use simpler assets as it's to time consuming to make the more specific assets and so I need to use ones available from the asset store.  
+
+I created Tiles with the notepad from blender with objects from the design doc.  https://assetstore.unity.com/packages/3d/props/office-supplies-low-poly-105519  
+These prefabs include objects suited for jumping. avoiding and ssliding under to make the core gameplay of the game. Need to add Death collisions later on as they only slow the player at the moment.
+
 
 Tiles Randomly generate infinitely.
 Collisions, Death screen and Menus need to be implemented.  
