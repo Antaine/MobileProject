@@ -47,27 +47,20 @@ December 11th -
 Added a level select to pick the level select and a basic lobby to the game. Added a highscore name that is stored with the highscore based on the name inputed by the player. Added background music to the menu.  
 
 December 12th -  
+Added level music and a shield icon that shows  when the player has a power up and dissapears when the player uses their item. Added an Audiomanger to be able to call music and sound effects throughout the project. Added sound effects and connecting the volume slider to the main audio mixer. Added sounds to the menus as well. Added mirror to the project to be able to run multiplayer on a unity framework. Fixed some errors found in testing. Added a multiplayer menu to the menu. https://github.com/VeriorPies/ParrelSync
 
+December 13th - 
+Added https://github.com/VeriorPies/ParrelSync to allow multiplayer testing. Added level 2 & 3. Minor fixed.
 
-
-https://github.com/VeriorPies/ParrelSync(Testing Multiplayer)  
-
-Added Level Music and Shield Icon 
-Added Audio Manager To replace Triggers Sounds 
-Sound Effects  
-Menu Sounds  
-Fixed Bug With Collisions in testing  
-Master Audio Slider  
-Multiplayer Menu  
-
-Level2  
-Multiplayer & Mirror added  
-Level 3  
-Minor Fixes  
-
+December 14th - 
+Multiplayer Connected and tweeks
 Talked To developer about multiplayer Lobby  
+
 Replacing it with a mirror  
+
 Multiplayer Join And Play  
 Comments  
 Fixes After Testing
-Test Cae Upload  
+Test Case Upload  
+
+
