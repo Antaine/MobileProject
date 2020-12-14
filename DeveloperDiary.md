@@ -38,24 +38,19 @@ December 8th -
 Added an a transition available for testing that allows the player to load the next level after a fixed distance. Added a ui pause button that brings up the pasue menu. Created a new prefab that generate planes with a wood texture to be the background  to make it look like the player is on a table and added other objects in the prefabs to make the desk look more cluttered.  
 
 December 9th -  
-Added swipe movement that allow the player move based on seiping rather then pressing the keys as this is what would be used on mobile. Improved tile spawning to remove clipping issues of textures overlaping with the tiles. Added death from obstacles when the player collides. Changed the score from distance to a timer which has none of the bug I thought it would. Added a player model based on a ninja with an ink material making it look like the ideal player model in the doc. As well I added a basic running animation to the model as the player moves. Imroved elements of the UI with paper backgrounds and minor tweeks in the layout. Added a start screen on the level that stops the player game from starting immediately in case the player is next to an object allowing the player ready themselves before playing. 
+Added swipe movement that allow the player move based on seiping rather then pressing the keys as this is what would be used on mobile. Added death from obstacles when the player collides. Added a player model based on a ninja with an ink material making it look like the ideal player model in the doc. As well I added a basic running animation to the model as the player moves. Improved elements of the UI with paper backgrounds and minor tweeks in the layout. Added a start screen on the level that stops the player game from starting immediately in case the player is next to an object allowing the player ready themselves before playing. 
 
-Decemmber 9th -  
+December 10th -  
+Improved tile spawning to remove clipping issues of textures overlaping with the tiles. Added death from Obstacles and made it so only colliding with an object with tag Obstacles kills the player to avoid any power ups or other objects to do this. Changed the score from distance to a timer which has none of the bug I thought it would. Added a power up that gives the player one free collision without dying but temporarily slows the player down. Encountered a bug where the shield didn't work because it registered multiple collisions so I used the invoke method to allow the player more time to get out of the obstacles way within 2 seconds. Created a script that spawns and destroys the script in the tile spawner after a fixed amount of tile spawns. Updated the game to fit a portrait 16:9 ratio as this is what most phones will use. Added a highscore so the highest score is added to the leaderboard section of the mamin menu.  
+
+December 11th - 
+Added a level select to pick the level select and a basic lobby to the game. Added a highscore name that is stored with the highscore based on the name inputed by the player. Added background music to the menu.  
+
+December 12th -  
 
 
-Added a power up that gives the player a shield that allows one collison without dying. the shields s
-
-Added a Power up that gives the user a life  
-Encountered Bug where multiple collisions caused the power to not work as intended  
-Fixed Power Up  
-Updated camera for phone aspect ratio  
-Added High score to main menu  
 
 https://github.com/VeriorPies/ParrelSync(Testing Multiplayer)  
-Added a level Select  
-Created a lobby  
-Save Player name to Highscore  
-Added Background music  
 
 Added Level Music and Shield Icon 
 Added Audio Manager To replace Triggers Sounds 
