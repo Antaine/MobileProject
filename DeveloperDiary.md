@@ -11,7 +11,7 @@ much easier as They will only need to spawn in 3 locations the middle, left or r
 Added Jumping whichh will be used to avoid smaller obstacles later on.  
 Player Continues to rise so i added grvity in the player movement script rather then the rigidbody as this allows me to customise it to tweek the jumping and making it tighter later on. I also changed the movemment to only go left and right till they make it to the final lane on their respective sides.  
 
-November 29th - 
+November 29th -  
 After researching spawning planes and decided on creating tiles to spawn that will add spawn in a random order at a fixed distance to create a different track every time. I used blender to create a notepad asset to serve as the ground for all the tiles. This took longer than expected and I talked to the designer about needing to use simpler assets as it's to time consuming to make the more specific assets and so I need to use ones available from the asset store.  
 
 I created Tiles with the notepad from blender with objects from the design doc.  https://assetstore.unity.com/packages/3d/props/office-supplies-low-poly-105519  
@@ -28,31 +28,23 @@ Considered keeping the distance over the timer but after reviewing the game doc 
 Need to add Game over screen, improved collisions and more tiles.  
 
 December 5th -  
+Created an Ink material to the project to allow it to match the asthetic of the doc more. I decided to do this because it was a simple and fast way to allow the game to look more asthetically pleasing without spending a decent amount of time doing it. I added this to the player model and the the text in the menus. Added a pause menu to the game that is triggered by the 'P' key. It stops time in the game and activates a pause menu pannel allowing the game to resume or quit with an options menu.  Talked to the designer about adding a quit button to the pause menu and he agreed. I need to add a wave of ink to follow the player which is a good way to test death collisions. Considering whether the the obstacles should only slow the player down as the wave of ink cannot kill the player if the objects do.  
 
-Updated Menu with Ink
-Added Pause Menu.  
-Talked with designer about adding a quit to menu button.  
-Need to add ink to follow player. 
-Improve collisions that slow the player and death from ink.  
-Talk to designer about lives vs slow  
-Need to add more tiles andd extra levels.  
-Multiplayer add ghost, talk to designer about the scope of multiplayer being too big if other projects get in the way  
+December 7th -  
+Added a basic death condition for the player that is triggered by the wave on ink catching up to the player which is constantly following the player that restarts the level. Improved the hitbox of certain obstacles so it doesn't affect the player in certain places. I need to add more tiles to the prefab to make the level gameplay and look more unique as it will be repetitive with the exact same objects. review the scope of online multiplayer. Added a crouch function that reduces the player hitbox allowing the player to crouch under the hole puncher and avoiding the colision and continuing through the map.  
+Made the movement appear more look more fluid dispite moving fixed amounts. Added a death screen that that show the player score as well as allowing the player to retry, leave to the menu or wuit the application.  
 
-Added crouch,  
-improved movement  
+December 8th -  
+Added an a transition available for testing that allows the player to load the next level after a fixed distance. Added a ui pause button that brings up the pasue menu. Created a new prefab that generate planes with a wood texture to be the background  to make it look like the player is on a table and added other objects in the prefabs to make the desk look more cluttered.  
+
+December 9th -  
+Added swipe movement that allow the player move based on seiping rather then pressing the keys as this is what would be used on mobile. Improved tile spawning to remove clipping issues of textures overlaping with the tiles. Added death from obstacles when the player collides. Changed the score from distance to a timer which has none of the bug I thought it would. Added a player model based on a ninja with an ink material making it look like the ideal player model in the doc. As well I added a basic running animation to the model as the player moves. Imroved elements of the UI with paper backgrounds and minor tweeks in the layout. Added a start screen on the level that stops the player game from starting immediately in case the player is next to an object allowing the player ready themselves before playing. 
+
+Decemmber 9th -  
 
 
-Game over Screen  
-Ink kills Player  
-  
-Level complete and transition  
-Added Pause button  
-Generates Table for background    
-  
-Swipe Controls  
-Improved Tile Spawning  
-Added Death From Obstacles  
-Changed Score to a Timer like the designer wanted  
+Added a power up that gives the player a shield that allows one collison without dying. the shields s
+
 Added a Power up that gives the user a life  
 Encountered Bug where multiple collisions caused the power to not work as intended  
 Fixed Power Up  
