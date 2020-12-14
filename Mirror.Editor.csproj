@@ -55,21 +55,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mirror\Editor\EnterPlayModeSettingsCheck.cs" />
-     <Compile Include="Assets\Mirror\Editor\InspectorHelper.cs" />
-     <Compile Include="Assets\Mirror\Editor\LogLevelWindow.cs" />
-     <Compile Include="Assets\Mirror\Editor\Logging\LogLevelWindow.cs" />
-     <Compile Include="Assets\Mirror\Editor\Logging\LogLevelsGUI.cs" />
-     <Compile Include="Assets\Mirror\Editor\Logging\LogSettingsEditor.cs" />
-     <Compile Include="Assets\Mirror\Editor\Logging\NetworkLogSettingsEditor.cs" />
-     <Compile Include="Assets\Mirror\Editor\NetworkBehaviourInspector.cs" />
-     <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
-     <Compile Include="Assets\Mirror\Editor\NetworkManagerEditor.cs" />
-     <Compile Include="Assets\Mirror\Editor\NetworkScenePostProcess.cs" />
-     <Compile Include="Assets\Mirror\Editor\SceneDrawer.cs" />
-     <Compile Include="Assets\Mirror\Editor\ScriptableObjectUtility.cs" />
-     <Compile Include="Assets\Mirror\Editor\SyncVarAttributeDrawer.cs" />
-     <None Include="Assets\Mirror\Editor\Mirror.Editor.asmdef" />
+     <Compile Include="Assets\Imports\Mirror\Editor\EnterPlayModeSettingsCheck.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\InspectorHelper.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\LogLevelWindow.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\Logging\LogLevelWindow.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\Logging\LogLevelsGUI.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\Logging\LogSettingsEditor.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\Logging\NetworkLogSettingsEditor.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\NetworkBehaviourInspector.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\NetworkInformationPreview.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\NetworkManagerEditor.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\NetworkScenePostProcess.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\SceneDrawer.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Imports\Mirror\Editor\SyncVarAttributeDrawer.cs" />
+     <None Include="Assets\Imports\Mirror\Editor\Mirror.Editor.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -278,16 +278,16 @@
  <HintPath>E:/UN/2019.3.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Mdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Pdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Rocks">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

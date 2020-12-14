@@ -55,33 +55,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\AssemblyInfo.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\SimpleWebClient.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\ClientHandshake.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\ClientSslHelper.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\WebSocketClientStandAlone.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\Webgl\SimpleWebJSLib.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Client\Webgl\WebSocketClientWebGl.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\BufferPool.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\Connection.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\Constants.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\EventType.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\Log.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\Message.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\MessageProcessor.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\ReadHelper.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\ReceiveLoop.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\SendLoop.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\TcpConfig.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Common\Utils.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Server\ServerHandshake.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Server\ServerSslHelper.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Server\SimpleWebServer.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\Server\WebSocketServer.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\SimpleWebTransport.cs" />
-     <Compile Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\SslConfigLoader.cs" />
-     <None Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\SimpleWebTransport.asmdef" />
-     <None Include="Assets\Mirror\Runtime\Transport\SimpleWebTransport\README.txt" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\AssemblyInfo.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\SimpleWebClient.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\ClientHandshake.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\ClientSslHelper.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\StandAlone\WebSocketClientStandAlone.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\Webgl\SimpleWebJSLib.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Client\Webgl\WebSocketClientWebGl.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\BufferPool.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\Connection.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\Constants.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\EventType.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\Log.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\Message.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\MessageProcessor.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\ReadHelper.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\ReceiveLoop.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\SendLoop.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\TcpConfig.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Common\Utils.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Server\ServerHandshake.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Server\ServerSslHelper.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Server\SimpleWebServer.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\Server\WebSocketServer.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\SimpleWebTransport.cs" />
+     <Compile Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\SslConfigLoader.cs" />
+     <None Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\SimpleWebTransport.asmdef" />
+     <None Include="Assets\Imports\Mirror\Runtime\Transport\SimpleWebTransport\README.txt" />
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -278,16 +278,16 @@
  <HintPath>E:/UN/2019.3.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Mdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Pdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Rocks">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>E:/UN/2019.3.9f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

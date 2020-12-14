@@ -41,14 +41,13 @@ public class TileManager : MonoBehaviour
             count++;
         }
 
-        if(count == shieldRate)
-        {
+        if(count == shieldRate){
             SpawnShield();
             DeleteShields();
             count =0;
         }
     }
-//Spawns Tiels
+//Spawns Tiles
     public void SpawnTile(int tileIndex){
         GameObject go = Instantiate(tilePrefabs[tileIndex],transform.forward * zSpawn, transform.rotation);
         activeTiles.Add(go);

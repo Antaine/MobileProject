@@ -1921,6 +1921,8 @@ MonoBehaviour:
   - {fileID: 5098719136059295208, guid: 521c8187b2d6d984ead6ea4da14912ee, type: 3}
   - {fileID: 90105703496587827, guid: 6f631f889855f1d4fbb49c34dbbd9292, type: 3}
   - {fileID: 4406289391741292573, guid: 2d410cec2dee4fe4e9db2980de4e8a78, type: 3}
+  - {fileID: 2918830450163473430, guid: ca2db4ed2417e9042af2d872d1254830, type: 3}
+  - {fileID: 6882793870517132214, guid: 5a2db0819551bcb448c06c2d752fa99b, type: 3}
   shield: {fileID: 3099084519971252851, guid: 1250fae98685d55428a98115cc4ec1f6, type: 3}
   zSpawn: 0
   tileLength: 15
@@ -4741,7 +4743,7 @@ PrefabInstance:
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3930818
+      value: 1.3930819
       objectReference: {fileID: 0}
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
@@ -4751,17 +4753,17 @@ PrefabInstance:
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
         type: 3}
@@ -4787,6 +4789,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636789900003264941, guid: 0373dbb108a1bf14e839c8a0dd998f54,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0373dbb108a1bf14e839c8a0dd998f54, type: 3}

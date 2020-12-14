@@ -72,13 +72,10 @@
      <Compile Include="Assets\__Scripts\StartManager.cs" />
      <Compile Include="Assets\__Scripts\SwipeManager.cs" />
      <Compile Include="Assets\__Scripts\TileManager.cs" />
-     <None Include="Assets\Kitchen Asset\README.txt" />
-     <None Include="Assets\Mirror\Version.txt" />
-     <None Include="Assets\Mirror\Readme.txt" />
+     <None Include="Assets\Imports\Mirror\Readme.txt" />
      <None Include="Assets\ParrelSync\VERSION.txt" />
-     <None Include="Assets\Mirror\Notice.txt" />
-     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
-     <None Include="Assets\POLYGON city pack\Read_me.txt" />
+     <None Include="Assets\Imports\Mirror\Plugins\Mono.Cecil\License.txt" />
+     <None Include="Assets\Imports\POLYGON city pack\Read_me.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Workspaces/Mobile/Ink Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -278,16 +275,16 @@
  <HintPath>E:/UN/2019.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Mdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Pdb">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Rocks">
- <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ <HintPath>E:/Workspaces/Mobile/Ink Run/Assets/Imports/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>E:/UN/2019.3.9f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -648,10 +645,6 @@
       <Project>{F9564747-C394-E75B-669C-7DA34E22034B}</Project>
       <Name>Mirror.Components</Name>
     </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{1D0FE32F-F947-2C01-984C-A5FF0E135CC9}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
       <Project>{AB894775-0556-31C6-A184-6E0E5A5BC2B4}</Project>
       <Name>Mirror.CompilerSymbols</Name>
@@ -671,10 +664,6 @@
     <ProjectReference Include="Mirror.csproj">
       <Project>{EF0A25D2-B990-41F7-CEC8-E97EC66A67A1}</Project>
       <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.example.RigidbodyPhysics.csproj">
-      <Project>{E43892B8-5E1A-3FAF-BD22-3B21574E750E}</Project>
-      <Name>Mirror.example.RigidbodyPhysics</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Editor.csproj">
       <Project>{5DF74182-0B8C-3FAF-F74F-D4580EC5AE12}</Project>
