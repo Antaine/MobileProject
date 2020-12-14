@@ -65,3 +65,15 @@ Menu Sounds
 Fixed Bug With Collisions in testing  
 Master Audio Slider  
 Multiplayer Menu  
+
+Level2  
+Multiplayer & Mirror added  
+Level 3  
+Minor Fixes  
+
+Talked To developer about multiplayer Lobby  
+Replacing it with a mirror  
+Multiplayer Join And Play  
+Comments  
+Fixes After Testing
+Test Cae Upload  
